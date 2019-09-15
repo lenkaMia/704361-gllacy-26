@@ -41,49 +41,41 @@
           <li>
             <a href="#">Корзина</a>
               <div class="shopping-cart">
-
-                <!-- Товар #1 -->
-                <div class="item">
-                  <button class="delete-btn" type="reset" ></button>
-                  <div class="image">
-                    <a href="#">
+                <form class="checkout" action="https://echo.htmlacademy.ru" method="get">
+                  <!-- Товар #1 -->
+                  <div class="item">
+                    <button class="delete-btn" type="button" ></button>
+                    <a class="image" href="#">
                       <img src="ice_cream_1.jpg" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой" width="33" height="33" />
                     </a>
+                    <span class="description">Пломбир с апельсиновым джемом</span>
+                    <span class="quantity">1,5 кг х 200 руб.</span>
+                    <span class="total-price">
+                      300 руб.
+                    </span>
                   </div>
-                  <span class="description">Пломбир с апельсиновым джемом</span>
-                  <span class="quantity">1,5 кг х 200 руб.</span>
-                  <span class="total-price">
-                    300 руб.
-                  </span>
-                </div>
 
-                <!-- Товар #2 -->
-                <div class="item">
-                  <button class="delete-btn" type="reset" ></button>
-                  <div class="image">
-                    <a href="#">
+                  <!-- Товар #2 -->
+                  <div class="item">
+                    <button class="delete-btn" type="button" ></button>
+                    <a class="image" href="#">
                       <img src="ice_cream_3.jpg" alt="Сливочно-клубничное с присыпкой из белого шоколада" width="33" height="33" />
                     </a>
+                    <span class="description">Клубничный пломбир с присыпкой из белого шоколада</span>
+                    <span class="quantity">1,5 кг х 300 руб.</span>
+                    <span class="total-price">
+                      450 руб.
+                    </span>
                   </div>
-                  <div class="description">
-                    <span>Клубничный пломбир с присыпкой из белого шоколада</span>
-                  </div>
-                  <div class="quantity">
-                    <span>1,5 кг х 300 руб.</span>
-                  </div>
-                  <div class="total-price">
-                    450 руб.
-                  </div>
-                </div>
 
-                <div class="shopping-cart-total">
-                  <span class="cart-total">
+                  <div class="shopping-cart-total">
+                    <span class="cart-total">
                     Итого: 750 руб.
-                  </span>
-                  <form class="checkout" action="https://echo.htmlacademy.ru" method="get">
-                    <input class="button-checkout" type="submit" name="button-checkout" placeholder="Оформить заказ" />
-                  </form>
-                </div>
+                    </span>
+
+                  <input class="button-checkout" type="submit" name="button-checkout" placeholder="Оформить заказ" />
+                  </div>
+                </form>
 
               </div>
           </li>
@@ -116,10 +108,10 @@
 
               <p>Сортировка:</p>
                 <select name="sort">
-                  <option value="по популярности">по популярности</option>
-                  <option value="сначала недорогие">сначала недорогие</option>
-                  <option value="сначала дорогие">сначала дорогие</option>
-                  <option value="по жирности">спо жирности</option>
+                  <option value="by-popularity">по популярности</option>
+                  <option value="cheap-first">сначала недорогие</option>
+                  <option value="expensive-first">сначала дорогие</option>
+                  <option value="by-fat">спо жирности</option>
                 </select>
 
               <div class="price-range">
