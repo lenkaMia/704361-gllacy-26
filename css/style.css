@@ -168,7 +168,12 @@ ul.breadcrumbs {
 .breadcrumbs a {
   font-size: 14px;
   line-height: 16px;
-  color: #ffffff
+  color: #ffffff;
+  border-bottom: 1px solid #ffffff;
+}
+
+.breadcrumbs-current a{
+  border-bottom: none;
 }
 
 
@@ -228,6 +233,27 @@ ul.breadcrumbs li:last-child::after {
 
 a.header-number {
   color: #ffffff;
+}
+
+.sorting {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18px;
+  text-align: left;
+  color: #ffffff;
+  width: 194px;
+  height: 37px;
+  opacity: 0.2;
+  background-color: #f8f7f4;
+  border-radius: 25px;
+}
+
+.button-apply {
+  width: 144px;
+  height: 37px;
+  border: 2px solid #ffffff;
+  border-radius: 25px;
+  background-color: #ffffff;
 }
 
 .slider {
@@ -408,7 +434,7 @@ a.button-topping{
   font-weight: 500;
   line-height: 22px;
   text-align: center;
-  text-decoration: underline;
+  border-bottom: 1px solid #ffffff;
   color: #ffffff;
 }
 
