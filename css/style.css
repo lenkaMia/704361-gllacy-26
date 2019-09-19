@@ -171,6 +171,7 @@ ul.breadcrumbs {
   color: #ffffff
 }
 
+
 ul.breadcrumbs li {
   display: inline;
   position: relative;
@@ -402,7 +403,12 @@ a.button-topping{
   border-radius: 50%;
 }
 
-.catalog-item-image a {
+.catalog-item-title a {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 22px;
+  text-align: center;
+  text-decoration: underline;
   color: #ffffff;
 }
 
@@ -434,7 +440,9 @@ a.button-topping{
 }
 
 .hit-list li:hover .hover-catalog-item,
-.hit-list li:active .hover-catalog-item {
+.hit-list li:active .hover-catalog-item,
+.catalog-list li:hover .hover-catalog-item
+.catalog-list li:active .hover-catalog-item {
   display: block;
 }
 
