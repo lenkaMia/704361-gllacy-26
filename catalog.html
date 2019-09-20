@@ -40,7 +40,7 @@
             <li><a href="company.html">О Компании</a></li>
           </ul>
           <ul class="user-navigation">
-            <li>
+            <li class="user-navigation">
               <a href="#" class="button-search">
                 <img src="img/svg-gllacy/loupe.svg" width="17px" height="17px" alt="Поиск" />
               </a>
@@ -48,7 +48,7 @@
                   <input type="search" name="search" value="Что ищем?">
                 </form>
             </li>
-            <li>
+            <li class="user-navigation">
               <a href="#" class="enter-link">Вход</a>
               <div class="entrance">
                 <form action="https://echo.htmlacademy.ru" method="post">
@@ -60,7 +60,7 @@
                 <a href="#">Новая регистрация</a>
               </div>
             </li>
-            <li>
+            <li class="user-navigation">
             <a href="#">Корзина</a>
               <div class="shopping-cart">
                 <form class="checkout" action="https://echo.htmlacademy.ru" method="get">
@@ -133,7 +133,7 @@
             <h3 class="visually-hidden">Фильтр</h3>
             <form class="filter" action="https://echo.htmlacademy.ru" method="post">
 
-              <p>Сортировка:</p>
+              <p class="sort-menu">Сортировка:</p>
                 <select class="sorting" name="sort">
                   <option value="by-popularity">по популярности</option>
                   <option value="cheap-first">сначала недорогие</option>
@@ -142,13 +142,13 @@
                 </select>
 
               <div class="price-range">
-                <p>
+                <p class="sort-menu">
                   Цена: 100 руб. – 500 руб.
                 </p>
                 <input type="range" name="pricecount" min="100" max="500" >
               </div>
 
-              <p>Жирность:</p>
+              <p class="sort-menu">Жирность:</p>
                 <label>
                   <input type="radio" name="fat" value="0%">0%
                 </label>
@@ -162,7 +162,7 @@
                   <input type="radio" name="fat" value="more 30%">выше 30%
                 </label>
 
-              <p>Наполнители:</p>
+              <p class="sort-menu">Наполнители:</p>
                 <label>
                   <input type="checkbox" name="add-choko" checked>шоколадные
                 </label>
@@ -285,22 +285,22 @@
               </li>
             </ul>
             <ul class="pagination">
-              <li class="previous">
+              <li class="prev">
                 <a href="#">&lt;</a>
               </li>
-              <li class="pagination-list-active">
+              <li class="pagination-item pagination-item-active">
                 <a>1</a>
               </li>
-              <li>
+              <li class="pagination-item">
                 <a href="#">2</a>
               </li>
-              <li>
+              <li class="pagination-item">
                 <a href="#">3</a>
               </li>
-              <li>
+              <li class="pagination-item">
                 <a href="#">4</a>
               </li>
-              <li>
+              <li class="pagination-item">
                 <a href="#">5</a>
               </li>
               <li class="next">
@@ -312,34 +312,30 @@
       </section>
     </main>
     <footer class="main-footer container">
-      <div class="wrapper">
+      <div class="footer-wrapper">
         <div class="footer-social">
           <ul class="social-ul">
             <li class="button-social">
               <a class="button-social-tw" href="img/svg-gllacy/twitter.svg" aria-label="Следите на за нами в Твиттере">
-                <img src="img/svg-gllacy/twitter.svg" width="32" height="32" alt="Twitter" />
               </a>
             </li>
             <li class="button-social">
               <a class="button-social-ig" href="#" aria-label="Следите на за нами в Инстаграмме">
-                <img src="img/svg-gllacy/instagram.svg" width="32" height="32" alt="Instagram" />
               </a>
             </li>
             <li class="button-social">
               <a class="button-social-fb" href="img/svg-gllacy/fb.svg" aria-label="Следите на за нами на Фейсбуке">
-                <img src="img/svg-gllacy/fb.svg" width="32" height="32" alt="Facebook" />
               </a>
             </li>
             <li class="button-social">
-              <a class="button-social-vk" href="img/svg-gllacy/vk.svg" aria-label="Следите на за нами в Контакте">
-                <img src="img/svg-gllacy/vk.svg" width="32" height="32" alt="VK" />
+              <a class="button-social-vk" href="#" aria-label="Следите на за нами в Контакте">
               </a>
             </li>
           </ul>
         </div>
 
         <div class="about-us">
-          <ul>
+          <ul class="about-us-ul">
             <li>
               <a class="about-us-bold" href="#">Для поставщиков</a>
             </li>

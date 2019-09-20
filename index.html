@@ -17,30 +17,30 @@
             <img class="logo-img" src="img/svg-gllacy/logo.svg" width="154" height="64" alt="Логотип магазина &quot;Глейси&quot;">
           </a>
           <ul class="site-navigation">
-            <li class="catalog"><a href="#">Каталог</a>
+            <li class="catalog"><a class="nav-item" href="#">Каталог</a>
               <ul class="drop-down-catalog">
                 <li>
-                  <a class="catalog-new" href="#">Новинки</a>
+                  <a class="drop-down catalog-new" href="#">Новинки</a>
                 </li>
                 <li>
-                  <a href="catalog.html">Сливочное</a>
+                  <a class="drop-down" href="catalog.html">Сливочное</a>
                 </li>
                 <li>
-                  <a href="#">Щербеты</a>
+                  <a class="drop-down" href="#">Щербеты</a>
                 </li>
                 <li>
-                  <a href="#">Фруктовый лед</a>
+                  <a class="drop-down" href="#">Фруктовый лед</a>
                 </li>
                 <li>
-                  <a href="#">Мелорин</a>
+                  <a class="drop-down" href="#">Мелорин</a>
                 </li>
               </ul>
             </li>
-            <li><a href="delivery.html">Доставка и оплата</a></li>
-            <li><a href="company.html">О Компании</a></li>
+            <li><a class="nav-item" href="delivery.html">Доставка и оплата</a></li>
+            <li><a class="nav-item" href="company.html">О Компании</a></li>
           </ul>
           <ul class="user-navigation">
-            <li>
+            <li class="user-navigation">
               <a href="#" class="button-search">
                 <img src="img/svg-gllacy/loupe.svg" width="17px" height="17px" alt="Поиск" />
               </a>
@@ -48,7 +48,7 @@
                   <input type="search" name="search" value="Что ищем?">
                 </form>
             </li>
-            <li>
+            <li class="user-navigation">
               <a href="#" class="enter-link">Вход</a>
               <div class="entrance">
                 <form action="https://echo.htmlacademy.ru" method="post">
@@ -60,7 +60,7 @@
                 <a href="#">Новая регистрация</a>
               </div>
             </li>
-            <li>
+            <li class="user-navigation">
               <a href="#" class="basket" alt="Корзина">Корзина</a>
                 <span class="shopping-cart-empty">
                   Пусто
@@ -126,8 +126,8 @@
       </div>
 
       <div class="hit-container">
-        <ul class="hit-list">
-          <li class="hit-item">
+        <ul class="catalog-list hit-list">
+          <li class="catalog-item hit-item">
             <img src="img/ice_cream_1.jpg" class="catalog-item-image" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой" />
             <h3 class="catalog-item-title"><a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a></h3>
             <p class="catalog-item-price">
@@ -135,7 +135,7 @@
             </p>
             <a href="#" class="hover-catalog-item button-catalog button-catalog">Быстрый просмотр</a>
           </li>
-          <li class="hit-item">
+          <li class="catalog-item hit-item">
             <img src="img/ice_cream_2.jpg" class="catalog-item-image" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада" />
             <h3 class="catalog-item-title"><a href="#">Сливочно-кофейное с кусочками шоколада</a></h3>
             <p class="catalog-item-price">
@@ -143,7 +143,7 @@
             </p>
             <a href="#" class="hover-catalog-item button-catalog">Быстрый просмотр</a>
           </li>
-          <li class="hit-item">
+          <li class="catalog-item hit-item">
             <img src="img/ice_cream_3.jpg" class="catalog-item-image" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада" />
             <h3 class="catalog-item-title"><a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a></h3>
             <p class="catalog-item-price">
@@ -151,7 +151,7 @@
             </p>
             <a href="#" class="hover-catalog-item button-catalog">Быстрый просмотр</a>
           </li>
-          <li class="hit-item">
+          <li class="catalog-item hit-item">
             <img src="img/ice_cream_4.jpg" class="catalog-item-image" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой" />
             <h3 class="catalog-item-title"><a href="#">Сливочное крем-брюле с карамельной подливкой</a></h3>
             <p class="catalog-item-price">
@@ -187,14 +187,21 @@
         </section>
         <article>
           <div class="blog-new wrapper">
-            <h2>Новое в нашем блоге</h2>
-              <p class="blog-background">
-                <a href="#">10 способов сервировки  фруктовых щербетов к  столу</a>
+            <div class="blog-news">
+              <h2>Новое в нашем блоге</h2>
+                <p class="blog-background">
+                  <a href="#">10 способов сервировки  фруктовых щербетов к  столу</a>
+                </p>
+            </div>
+            <div class="blog-form">
+              <p>
+                Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
               </p>
-            <form class="reviews-form" action="https://echo.htmlacademy.ru" method="post">
-              <input class="send-mail" type="email" name="send-mail" placeholder="Электронная почта"/>
-              <input class="button-send" type="submit" name="button-send" placeholder="Отправить" />
-            </form>
+              <form class="reviews-form" action="https://echo.htmlacademy.ru" method="post">
+                <input class="send-mail" type="email" name="send-mail" placeholder="Электронная почта"/>
+                <input class="button-send" type="submit" name="button-send" placeholder="Отправить" />
+              </form>
+            </div>
           </div>
         </article>
         <section class="contacts-main">
@@ -216,34 +223,30 @@
 
     </main>
     <footer class="main-footer container">
-      <div class="wrapper">
+      <div class="footer-wrapper">
         <div class="footer-social">
           <ul class="social-ul">
             <li class="button-social">
-              <a class="button-social-tw" href="img/svg-gllacy/twitter.svg" aria-label="Следите на за нами в Твиттере">
-                <img src="img/svg-gllacy/twitter.svg" width="32" height="32" alt="Twitter" />
+              <a class="button-social-tw" href="#" aria-label="Следите на за нами в Твиттере">
               </a>
             </li>
             <li class="button-social">
               <a class="button-social-ig" href="#" aria-label="Следите на за нами в Инстаграмме">
-                <img src="img/svg-gllacy/instagram.svg" width="32" height="32" alt="Instagram" />
               </a>
             </li>
             <li class="button-social">
               <a class="button-social-fb" href="img/svg-gllacy/fb.svg" aria-label="Следите на за нами на Фейсбуке">
-                <img src="img/svg-gllacy/fb.svg" width="32" height="32" alt="Facebook" />
               </a>
             </li>
             <li class="button-social">
-              <a class="button-social-vk" href="img/svg-gllacy/vk.svg" aria-label="Следите на за нами в Контакте">
-                <img src="img/svg-gllacy/vk.svg" width="32" height="32" alt="VK" />
+              <a class="button-social-vk" href="#" aria-label="Следите на за нами в Контакте">
               </a>
             </li>
           </ul>
         </div>
 
         <div class="about-us">
-          <ul>
+          <ul class="about-us-ul">
             <li>
               <a class="about-us-bold" href="#">Для поставщиков</a>
             </li>
