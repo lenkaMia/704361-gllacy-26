@@ -44,7 +44,6 @@ a {
 }
 
 .main-nav {
-  font-size: 16px;
   line-height: 18px;
   color: #ffffff;
 }
@@ -64,8 +63,10 @@ a {
 
 .main-nav .drop-down-catalog {
   position: absolute;
+  font-weight: 400;
   margin: 0;
-  padding: 0;
+  padding-top: 13px;
+  padding-left: 20px;
   list-style: none;
   display: none;
 }
@@ -77,7 +78,21 @@ li.catalog:hover .drop-down-catalog {
 .site-navigation,
 .user-navigation {
   list-style: none;
-  text-align: left;
+}
+
+.site-navigation {
+  font-weight: bold;
+}
+
+.site-navigation a {
+  color: #ffffff;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.user-navigation {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px:
 }
 
 .nav-item,
@@ -85,13 +100,13 @@ li.catalog:hover .drop-down-catalog {
   color: #ffffff;
 }
 
-.site-navigation a:hover {
+.nav-item:hover {
   font-weight: bold;
   color: #323232;
   background-color: #f7f6f3;
 }
 
-.site-navigation a:focus {
+.nav-item:focus {
   font-weight: bold;
   color: #ffffff;
   background-color: #d07058;
@@ -99,7 +114,6 @@ li.catalog:hover .drop-down-catalog {
 
 .user-navigation a:hover,
 .user-navigation a:focus {
-  font-weight: 500;
   color: #323232;
   background-color: #f7f6f3;
 }
@@ -115,8 +129,8 @@ li.catalog:hover .drop-down-catalog {
   border-radius: 5%;
   background-color: #f8f7f4;
 }
-.drop-down a {
-  text-decoration: none;
+
+.drop-down-catalog a {
   color: #323232;
 }
 
@@ -148,6 +162,20 @@ li.user-navigation:focus  .search-form {
   display: none
 }
 
+.entrance a {
+  color: #323232;
+  font-size: 13px;
+  line-height: 24px;
+  border-bottom: rgba(50, 50, 50, 0.3);
+}
+
+/* .registration-link a {
+  color: #323232;
+  font-size: 13px;
+  line-height: 24px;
+  border-bottom: rgba(50, 50, 50, 0.3);
+} */
+
 li.user-navigation:hover .entrance,
 li.user-navigation:focus  .entrance {
   display: block;
@@ -159,12 +187,53 @@ li.user-navigation:focus  .entrance {
   text-align: left;
   color: #323232;
 
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
   width: 540px;
   height: 242px;
   border-radius: 5px;
   box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.4);
   background-color: #f8f7f4;
   display: none;
+}
+
+.shopping-cart-full {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+  color: #323232;
+}
+
+.item {
+  font-size: 13px;
+  line-height: 16px;
+  font-weight: 400;
+  color: #323232;
+}
+
+.price-per-kg {
+  color: #999999;
+}
+
+.cart-total {
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 18px;
+}
+
+.button-checkout {
+  width: 170px;
+  height: 44px;
+  box-shadow: 0px 1px 2px 0 #ac1000;
+  background-image: linear-gradient(to top, #e74a35, #f26843);
+  border-radius: 25px;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 24px;
+  color: #fefefe;
 }
 
 li.user-navigation:hover .shopping-cart,
@@ -277,7 +346,17 @@ a.header-number {
   height: 37px;
   border: 2px solid #ffffff;
   border-radius: 25px;
-  background-color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.2);
+
+  font-weight: 500;
+  line-height: 18px;
+  color: #ffffff;
+  outline: none;
+}
+
+.choose-sort {
+  font-weight: 500;
+  line-height: 18px;
 }
 
 .slider {
@@ -460,7 +539,7 @@ a.button-topping{
   font-weight: 500;
   line-height: 22px;
   text-align: center;
-  border-bottom: 1px solid #ffffff;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   color: #ffffff;
 }
 
@@ -591,8 +670,23 @@ a.button-topping{
   color: #323232;
 }
 
+.contacts p{
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.bold-contacts {
+  font-size: 18px;
+  line-height: 24px;
+}
+
 .button-write-us {
-  color: #ffffff; 
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 24px;
+  color: #ffffff;
+  background: rgba(2255, 255, 255, 1);
+  border-radius: 50%;
 }
 
 .pagination {
@@ -732,14 +826,14 @@ footer::before {
   font-weight: normal;
   line-height: 16px;
   color: #ffffff;
-  border-bottom: 1px solid rgba(255, 255,255, 0.5)
+  border-bottom: 1px solid rgba(255, 255,255, 0.2)
 }
 a.about-us-bold {
   font-size: 13px;
   font-weight: bold;
   line-height: 16px;
   color: #ffffff;
-  border-bottom: 1px solid rgba(255, 255,255, 0.5)
+  border-bottom: 1px solid rgba(255, 255,255, 0.2)
 }
 
 .made-by {
@@ -760,4 +854,8 @@ a.about-us-bold {
   line-height: 18px;
   text-align: left;
   color: #fefefe;
+}
+
+.underlined-link {
+  border-bottom: 1px solid rgba(255, 255,255, 0.2)
 }

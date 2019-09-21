@@ -52,26 +52,29 @@
               <a href="#" class="enter-link">Вход</a>
               <div class="entrance">
                 <form action="https://echo.htmlacademy.ru" method="post">
-                  <input type="email" name="login" value="Электронная почта">
-                  <input type="password" name="password" value="Пароль">
-                  <input type="submit" name="enter" value="Войти">
+                  <input type="email" name="login" value="" placeholder="Электронная почта">
+                  <input type="password" name="password" value="" placeholder="Пароль">
+                  <input type="submit" name="enter" value="Войти" placeholder="Войти">
                 </form>
-                <a href="#">Забыли пароль?</a>
-                <a href="#">Новая регистрация</a>
+                <a class="registration-link" href="#">Забыли пароль?</a>
+                <a class="registration-link" href="#">Новая регистрация</a>
               </div>
             </li>
             <li class="user-navigation">
             <a href="#">Корзина</a>
+            <span class="shopping-cart-full">
+              2 товара
+            </span>
               <div class="shopping-cart">
                 <form class="checkout" action="https://echo.htmlacademy.ru" method="get">
                   <!-- Товар #1 -->
                   <div class="item">
                     <button class="delete-btn" type="button" ></button>
                     <a class="image" href="#">
-                      <img src="ice_cream_1.jpg" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой" width="33" height="33" />
+                      <img src="img/ice_cream_1.jpg" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой" width="33" height="33" />
                     </a>
                     <span class="description">Пломбир с апельсиновым джемом</span>
-                    <span class="quantity">1,5 кг х 200 руб.</span>
+                    <span class="quantity">1,5 кг х <span class="price-per-kg">200 руб.</span></span>
                     <span class="total-price">
                       300 руб.
                     </span>
@@ -81,10 +84,10 @@
                   <div class="item">
                     <button class="delete-btn" type="button" ></button>
                     <a class="image" href="#">
-                      <img src="ice_cream_3.jpg" alt="Сливочно-клубничное с присыпкой из белого шоколада" width="33" height="33" />
+                      <img src="img/ice_cream_3.jpg" alt="Сливочно-клубничное с присыпкой из белого шоколада" width="33" height="33" />
                     </a>
                     <span class="description">Клубничный пломбир с присыпкой из белого шоколада</span>
-                    <span class="quantity">1,5 кг х 300 руб.</span>
+                    <span class="quantity">1,5 кг х <span class="price-per-kg">300 руб.</span></span>
                     <span class="total-price">
                       450 руб.
                     </span>
@@ -95,7 +98,7 @@
                     Итого: 750 руб.
                     </span>
 
-                  <input class="button-checkout" type="submit" name="button-checkout" placeholder="Оформить заказ" />
+                    <input class="button-checkout" type="submit" name="button-checkout" value="Оформить заказ" placeholder="Оформить заказ" />
                   </div>
                 </form>
 
@@ -149,38 +152,36 @@
               </div>
 
               <p class="sort-menu">Жирность:</p>
-                <label>
+                <label class="choose-sort">
                   <input type="radio" name="fat" value="0%">0%
                 </label>
-                <label>
+                <label class="choose-sort">
                   <input type="radio" name="fat" value="less 10%" checked>до 10%
                 </label>
-                <label>
+                <label class="choose-sort">
                   <input type="radio" name="fat" value="less 30%">до 30%
                 </label>
-                <label>
+                <label class="choose-sort">
                   <input type="radio" name="fat" value="more 30%">выше 30%
                 </label>
 
               <p class="sort-menu">Наполнители:</p>
-                <label>
+                <label class="choose-sort">
                   <input type="checkbox" name="add-choko" checked>шоколадные
                 </label>
-                <label>
+                <label class="choose-sort">
                   <input type="checkbox" name="add-sugar" checked>сахарные присыпки
                 </label>
-                <label>
+                <label class="choose-sort">
                   <input type="checkbox" name="add-fruits">фрукты
                 </label>
-                <label>
+                <label class="choose-sort">
                   <input type="checkbox" name="add-syrups">сиропы
                 </label>
-                <label>
+                <label class="choose-sort">
                   <input type="checkbox" name="add-jems">джемы
                 </label>
-              <div class="button-apply">
-                <input type="submit" value="Применить">
-              </div>
+                <input class="button-apply" type="submit" value="Применить" placeholder="Применить">
 
             </form>
           </section>
