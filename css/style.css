@@ -28,6 +28,7 @@ a {
   width: 1146px;
   margin: 0 auto;
   padding: 0 0;
+  position: relative;
 }
 
 .visually-hidden {
@@ -766,6 +767,9 @@ p.blog-background {
   text-align: center;
 }
 
+.map{
+  width: 100%;
+}
 
 .contacts {
   width: 302px;
@@ -774,8 +778,8 @@ p.blog-background {
   border-radius: 10px;
   color: #323232;
   position: absolute;
-  left: 845px;
-  bottom: 70px;
+  right: 0;
+  bottom: -367px;
   padding-left: 25px;
   padding-top: 32px;
   padding-right: 25px;
