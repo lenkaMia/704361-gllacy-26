@@ -162,8 +162,8 @@
         </ul>
       </div>
 
-      <div class="container">
-        <section class="company">
+      <div>
+        <section class="company container">
           <div class="company-cover">
             <h2 class="visually-hidden">Преимущества</h2>
             <p class="company-description">
@@ -174,10 +174,10 @@
                   Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.
               </li>
               <li class="item-of-advantage">
-                  Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.
+                  Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.
               </li>
               <li class="item-of-advantage">
-                  Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.
+                  Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.
               </li>
               <li class="item-of-advantage">
                   Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.
@@ -194,19 +194,21 @@
                 </p>
             </div>
             <div class="blog-form">
-              <p>
-                Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
-              </p>
-              <form class="reviews-form" action="https://echo.htmlacademy.ru" method="post">
-                <input class="send-mail" type="email" name="send-mail" placeholder="Электронная почта"/>
-                <input class="button-send" type="submit" name="button-send"  value="Отправить"/>
-              </form>
+              <div class="blog-form-wrapper">
+                <p>
+                  Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
+                </p>
+                <form class="reviews-form" action="https://echo.htmlacademy.ru" method="post">
+                  <input class="send-mail" type="email" name="send-mail" placeholder="Электронная почта"/>
+                  <input class="button-send" type="submit" name="button-send"  value="Отправить"/>
+                </form>
+              </div>
             </div>
           </div>
         </article>
         <section class="contacts-main">
           <h2 class="visually-hidden">Контакты</h2>
-          <div class="contacts">
+          <div class="contacts container">
             <p>
               Адрес главного офиса<br />
                 и офлайн-магазина:
@@ -278,7 +280,7 @@
       </div>
     </footer>
 
-    <section class="write-reviews modal-show">
+    <section class="write-reviews modal-show visually-hidden">
       <h2>Мы обязательно вам ответим!</h2>
       <form class="reviews-form" action="https://echo.htmlacademy.ru" method="post">
         <input class="write-input write-name" type="text" name="write-name" placeholder="Как вас зовут?" />

@@ -323,6 +323,8 @@ ul.breadcrumbs li:last-child::after {
   color: #ffffff;
   margin-left: 70px;
   display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
 
 .working-hours {
@@ -389,7 +391,7 @@ a.header-number {
 
 /* .slider-ice-cream-1 {
   position: absolute;
-  z-index: 0;
+  z-index: 1;
 }
 
 .slider-ice-cream-2 {
@@ -400,9 +402,9 @@ a.header-number {
 .slider-ice-cream-3 {
   position: absolute;
   z-index: 0;
-} */
+}
 
-/* .active-slide {
+.active-slide {
   z-index: 1;
 } */
 
@@ -545,6 +547,7 @@ a.button-topping-2 {
   padding: 0;
   list-style: none;
   display: flex;
+  flex-wrap: wrap;
   margin-bottom: 40px;
 }
 
@@ -555,7 +558,11 @@ a.button-topping-2 {
   width: 267px;
   min-height: 267px;
   text-align: center;
-  margin-right: 27px;
+  margin-right: 26px;
+}
+
+.catalog-item:nth-child(4n) {
+  margin-right: 0;
 }
 
 h3.catalog-item-title {
@@ -627,6 +634,7 @@ p.catalog-item-price {
 
 .company-cover{
   background-image: url("../img/waffle-big.jpg");
+  min-height: 306px;
   background-position: top center;
   background-repeat: no-repeat;
   border-radius: 15px;
@@ -651,7 +659,8 @@ p.catalog-item-price {
   margin: 0;
   display: flex;
   flex-direction: row;
-  /* flex-wrap: wrap; */
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 .item-of-advantage {
@@ -659,6 +668,7 @@ p.catalog-item-price {
   font-weight: normal;
   line-height: 22px;
   color: #323232;
+  width: 475px;
 }
 
 .blog-wrapper {
@@ -704,9 +714,16 @@ p.blog-background {
   min-height: 220px;
   border-radius: 10px;
   background-image: url("../img/blog-post.svg");
-  /* background-color: #f8f7f4;
-  background-size: contain, 549px;
-  background-position: top, 100%; */
+
+}
+
+.blog-form-wrapper{
+  background-color: #f8f7f4;
+  width: 549px;
+  height: 211px;
+  border-radius: 10px;
+  margin-left: 6px;
+  margin-top: 4px;
 }
 
 .blog-form p {
@@ -746,11 +763,9 @@ p.blog-background {
   display: block;
   margin-top: 39px;
   position: relative;
+  text-align: center;
 }
 
-.map{
-  margin-left: -27px;
-}
 
 .contacts {
   width: 302px;
@@ -764,7 +779,9 @@ p.blog-background {
   padding-left: 25px;
   padding-top: 32px;
   padding-right: 25px;
+  margin-left: auto;
   z-index: 1;
+  text-align: left;
 }
 
 .contacts p{
@@ -848,7 +865,7 @@ p.contacts-margin {
 }
 
 .main-footer {
-  padding-top: 36px;
+  margin-top: 36px;
 }
 footer::before {
   width: 1146px;
@@ -866,7 +883,7 @@ footer::before {
     list-style: none;
     margin: 0;
     padding: 0;
-    flex-direction: row;
+    display: flex;
   }
 
 .button-social {
@@ -877,6 +894,7 @@ footer::before {
   background-color:: rgba(233, 233, 233, 0.8);
   box-shadow:  0 0 0 3px rgba(255, 255, 255, 0.5);
   background-position: center center;
+  margin-left: 17px;
 }
 .button-social:hover {
   background: rgba(2255, 255, 255, 0.7);
@@ -928,6 +946,8 @@ footer::before {
   list-style: none;
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .about-us a {
