@@ -81,6 +81,8 @@ a {
 
 .main-nav .drop-down-catalog {
   position: absolute;
+  top: 30px;
+  left: -20px;
   font-weight: 400;
   margin: 0;
   padding-top: 13px;
@@ -149,7 +151,7 @@ li.catalog:hover .drop-down-catalog {
   width: 143px;
   height: 171px;
   box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.4);
-  border-radius: 5%;
+  border-radius: 5px;
   background-color: #f8f7f4;
 }
 
@@ -166,11 +168,7 @@ li.catalog:hover .drop-down-catalog {
   height: 32px;
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 50%;
-}
-
-.button-search img {
-  margin-top: 1px;
-  margin-left: 7px;
+  padding-left: 7px;
 }
 
 .search-form {
@@ -285,6 +283,11 @@ li.user-navigation:focus  .search-form {
   padding-left: 16px;
 }
 
+.enter-link span{
+  vertical-align: top;
+  padding-left: 4px;
+}
+
 .entrance:hover,
 .entrance:active {
   display: block;
@@ -301,6 +304,11 @@ li.user-navigation:focus  .entrance{
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 25px;
   padding-left: 16px;
+}
+
+.basket span{
+  vertical-align: top;
+  padding-left: 4px;
 }
 
 .basket-full {
@@ -612,7 +620,8 @@ a.header-number {
 .slider {
   position: relative;
 
-  padding-top: 321px;
+  padding-top: 277px;
+  margin-bottom: 42px;
 
   text-align: center;
   color: #ffffff;
@@ -632,7 +641,7 @@ a.header-number {
 .slide-title {
   width: 700px;
   margin: 0 auto;
-  margin-bottom: 27px;
+  margin-bottom: 29px;
 
   font-size: 60px;
   line-height: 60px;
@@ -673,7 +682,7 @@ a.header-number {
 
 .slider-controls {
   position: absolute;
-  bottom: 63px;
+  bottom: 19px;
   left: 0;
   z-index: 20;
 
@@ -802,6 +811,7 @@ a.button-topping-2 {
   width: 267px;
   min-height: 267px;
   text-align: center;
+  margin-bottom: 40px;
 }
 
 .catalog-item:nth-child(4n) {
@@ -816,16 +826,13 @@ p.catalog-item-price {
   margin: 0;
 }
 
-.catalog-item:hover {
-
-}
-
 .catalog-item-image {
   border-radius: 50%;
 }
 
 h3.catalog-item-title {
   margin: 0;
+  margin-top: 3px;
 }
 
 .catalog-item-title span {
@@ -864,16 +871,15 @@ h3.catalog-item-title {
 
 .hover-catalog-item {
   position: absolute;
-  left: 0;
-  top: 0;
+  left: -12px;
+  top: -6px;
   z-index: 1;
 
   display: none;
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
-  width: 100%;
-  /* height: calc(100%-80px); */
+  width: 293px;
   padding-bottom: 20px;
 
   border-radius: 5px;
@@ -893,6 +899,7 @@ h3.catalog-item-title {
   box-shadow: 0 1px 2px 0 #ac1000;
   background-image: linear-gradient(to top, #e74a35, #f26843);
   border-radius: 25px;
+  margin-top: 342px;
 }
 
 .hit-item::before {
@@ -914,7 +921,7 @@ h3.catalog-item-title {
   background-position: top center;
   background-repeat: no-repeat;
   border-radius: 15px;
-  margin-top: 40px;
+  margin-top: -43px;
 }
 
 .company-description {
@@ -1042,17 +1049,17 @@ h3.catalog-item-title {
   border-bottom: 2px solid #323232;
   padding-top: 15px;
 }
+
 p.blog-background {
   margin: 0;
+  margin-top: 2px;
 }
-
 
 .blog-form {
   width: 560px;
   min-height: 220px;
   border-radius: 10px;
   background-image: url("../img/blog-post.svg");
-
 }
 
 .blog-form-wrapper{
@@ -1120,10 +1127,6 @@ p.blog-background {
   text-align: center;
 }
 
-/* .map{
-  width: 100%;
-} */
-
 .contacts {
   width: 302px;
   height: 305px;
@@ -1184,6 +1187,12 @@ p.contacts-margin {
   box-shadow: inset 0px 2px 2px 0 #942718;
   background-image:
   linear-gradient(to bottom, rgba(0, 0, 0, 0.07), rgba(0, 0, 0, 0.07)), linear-gradient(to bottom, #e74a35, #f26843);
+}
+
+.pin {
+  position: absolute;
+  top: 139px;
+  left: 238px;
 }
 
 .pagination {
@@ -1278,13 +1287,15 @@ footer::before {
   box-shadow:  0 0 0 3px rgba(255, 255, 255, 0.7);
 }
 
-.button-social:hover path,
-.button-social:active path {
+.button-social:hover g,
+.button-social:active g {
   background-color: : #849d8f;
 }
 
 .about-us {
   min-height: 70px;
+  margin-top: 13px;
+  margin-left: 15px;
 }
 
 .about-us ul {
@@ -1343,9 +1354,6 @@ a.about-us-bold {
   font-weight: normal;
   line-height: 18px;
   text-align: left;
-  /* display: flex;
-  flex-direction: column;
-  justify-content: space-between; */
 }
 
 .made-by a {
@@ -1354,6 +1362,10 @@ a.about-us-bold {
   line-height: 18px;
   text-align: left;
   color: #fefefe;
+}
+
+.made-by p {
+  margin-top: 0px;
 }
 
 .underlined-link {
