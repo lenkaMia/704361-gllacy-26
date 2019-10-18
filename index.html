@@ -22,7 +22,8 @@
             </a>
             <ul class="site-navigation">
               <li class="catalog">
-                <a class="nav-item nav-item-catalog" href="#">Каталог</a>
+                <a class="nav-item nav-item-catalog" href="#">
+                  <span>Каталог</span></a>
                 <ul class="drop-down-catalog">
                   <li>
                     <a class="drop-down catalog-new" href="#"><b>Новинки</b></a>
@@ -41,8 +42,12 @@
                   </li>
                 </ul>
               </li>
-              <li><a class="nav-item" href="delivery.html">Доставка и оплата</a></li>
-              <li><a class="nav-item" href="company.html">О Компании</a></li>
+              <li><a class="nav-item" href="delivery.html">
+                <span>Доставка и оплата</span>
+                  </a></li>
+              <li><a class="nav-item" href="company.html">
+                <span>О Компании</span>
+                  </a></li>
             </ul>
             <ul class="user-navigation">
               <li class="user-navigation">
@@ -62,10 +67,16 @@
                   <form action="https://echo.htmlacademy.ru" method="post">
                     <input class="email-line" type="email" name="login" value="" placeholder="Электронная почта">
                     <input class="pass-line" type="password" name="password" value="" placeholder="Пароль">
-                    <input class="enter-button" type="submit" name="enter" value="Войти" placeholder="Войти">
+                    <div class="entrance-form-wrapper">
+                      <div class="entrance-button">
+                        <input class="enter-button red-button" type="submit" name="enter" value="Войти" placeholder="Войти">
+                      </div>
+                      <div class="entrance-links">
+                        <a class="registration-link" href="#">Забыли пароль?</a>
+                        <a class="registration-link" href="#">Новая регистрация</a>
+                      </div>
+                    </div>
                   </form>
-                  <a class="registration-link" href="#">Забыли пароль?</a>
-                  <a class="registration-link" href="#">Новая регистрация</a>
                 </div>
               </li>
               <li class="user-navigation">
@@ -116,23 +127,23 @@
           </div>
 
         <div class="topping-container topping-wrapper container">
-          <div class="topping-rasberries">
+          <div class="topping topping-rasberries">
             <p class="topping-title">
               Малинка даром!
             </p>
             <p class="topping-proposal">
               При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.
             </p>
-            <a href="#" class="button-topping">Хочу варенье!</a>
+            <a href="#" class="button-topping red-button">Хочу варенье!</a>
           </div>
-          <div class="topping-shoko">
+          <div class="topping topping-choko">
             <p class="topping-title">
               Шоколадки даром!
             </p>
             <p class="topping-proposal">
               При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.
             </p>
-            <a href="#" class="button-topping button-topping-2 ">Хочу шоколадки!</a>
+            <a href="#" class="button-topping button-topping-2 red-button">Хочу шоколадки!</a>
           </div>
         </div>
 
@@ -148,7 +159,7 @@
                 </p>
               </a>
               <div class="hover-catalog-item">
-                <button class="button-catalog" type="button">Быстрый просмотр</a>
+                <button class="button-catalog red-button" type="button">Быстрый просмотр</a>
               </div>
             </li>
             <li class="catalog-item hit-item">
@@ -161,7 +172,7 @@
                 </p>
               </a>
               <div class="hover-catalog-item">
-                <button class="button-catalog" type="button">Быстрый просмотр</a>
+                <button class="button-catalog red-button" type="button">Быстрый просмотр</a>
               </div>
             </li>
             <li class="catalog-item hit-item">
@@ -174,7 +185,7 @@
                 </p>
               </a>
               <div class="hover-catalog-item">
-                <button class="button-catalog" type="button">Быстрый просмотр</a>
+                <button class="button-catalog red-button" type="button">Быстрый просмотр</a>
               </div>
             </li>
             <li class="catalog-item hit-item">
@@ -187,7 +198,7 @@
                 </p>
               </a>
               <div class="hover-catalog-item">
-                <button class="button-catalog" type="button">Быстрый просмотр</a>
+                <button class="button-catalog red-button" type="button">Быстрый просмотр</a>
               </div>
             </li>
           </ul>
@@ -231,7 +242,7 @@
                   </p>
                   <form class="reviews-form" action="https://echo.htmlacademy.ru" method="post">
                     <input class="send-mail" type="email" name="send-mail" placeholder="Электронная почта"/>
-                    <input class="button-send" type="submit" name="button-send"  value="Отправить"/>
+                    <input class="button-send red-button" type="submit" name="button-send"  value="Отправить"/>
                   </form>
                 </div>
               </div>
@@ -254,7 +265,7 @@
                 <p>
                   (с 10 до 20 ежедневно)
                 </p>
-                <a class="button-write-us" href>Форма обратной связи</a>
+                <a class="button-write-us red-button" href>Форма обратной связи</a>
               </div>
               <img class="pin" src="img/svg-gllacy/pin.svg" width="80" height="140" alt="Наш магазин находится по адресу г. Санкт-Петербург, ул. Конюшенная, д. 19/8" />
             </div>
@@ -328,7 +339,7 @@
           <input class="write-input write-email" type="email" name="write-email" placeholder="Ваша почта для ответа?" />
           <textarea class="write-input write-text" name="write-text" rows="5" placeholder="Напишите что-нибудь..."></textarea>
           <div class="reviews-send">
-            <input class="reviews-button" type="submit" name="button-send" value="Отправить">
+            <input class="reviews-button red-button" type="submit" name="button-send" value="Отправить">
           </div>
         </form>
         <button class="modal-close" type="button">

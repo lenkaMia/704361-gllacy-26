@@ -18,7 +18,8 @@
           <img class="logo-img" src="img/svg-gllacy/logo.svg" width="154" height="64" alt="Логотип магазина &quot;Глейси&quot;">
         </a>
         <ul class="site-navigation">
-          <li class="catalog catalog-active"><a class="nav-item" href="#">Каталог</a>
+          <li class="catalog"><a class="nav-item nav-item-current" href="#">
+            <span>Каталог</span></a>
             <ul class="drop-down-catalog">
               <li>
                 <a class="catalog-new" href="#">Новинки</a>
@@ -37,8 +38,12 @@
               </li>
             </ul>
           </li>
-          <li><a class="nav-item" href="delivery.html">Доставка и оплата</a></li>
-          <li><a class="nav-item" href="company.html">О Компании</a></li>
+          <li><a class="nav-item" href="delivery.html">
+            <span>Доставка и оплата</span>
+              </a></li>
+          <li><a class="nav-item" href="company.html">
+            <span>О Компании</span>
+              </a></li>
         </ul>
         <ul class="user-navigation">
           <li class="user-navigation">
@@ -63,10 +68,16 @@
               <form action="https://echo.htmlacademy.ru" method="post">
                 <input class="email-line" type="email" name="login" value="" placeholder="Электронная почта">
                 <input class="pass-line" type="password" name="password" value="" placeholder="Пароль">
-                <input class="enter-button" type="submit" name="enter" value="Войти" placeholder="Войти">
+                <div class="entrance-form-wrapper">
+                  <div class="entrance-button">
+                    <input class="enter-button red-button" type="submit" name="enter" value="Войти" placeholder="Войти">
+                  </div>
+                  <div class="entrance-links">
+                    <a class="registration-link" href="#">Забыли пароль?</a>
+                    <a class="registration-link" href="#">Новая регистрация</a>
+                  </div>
+                </div>
               </form>
-              <a class="registration-link" href="#">Забыли пароль?</a>
-              <a class="registration-link" href="#">Новая регистрация</a>
             </div>
           </li>
           <li class="user-navigation">
@@ -163,7 +174,7 @@
                   </td>
                 </tr>
               </table>
-              <button class="button-checkout" type="button">Оформить заказ</button>
+              <button class="button-checkout red-button" type="button">Оформить заказ</button>
             </div>
           </li>
         </ul>
