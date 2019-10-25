@@ -1545,17 +1545,6 @@ li.prev {
   margin-top: 17px;
 }
 
-footer::before .catalog-footer{
-  content: "";
-
-  position: absolute;
-  top: -10px;
-
-  width: 1146px;
-  height: 1px;
-  background-color: rgba(2255, 255, 255, 0.3);
-}
-
 .footer-wrapper {
   display:flex;
   justify-content: space-between;
@@ -1692,7 +1681,7 @@ a.about-us-bold {
   border: solid 2px rgba(154, 154, 154, 0.5);
 }
 
-.input-hover:::-webkit-input-placeholder {
+.input-hover::-webkit-input-placeholder {
   color: #999999;
 }
 
