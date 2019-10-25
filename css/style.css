@@ -28,8 +28,7 @@ a {
 }
 
 .inner-page {
-  height: 656px;
-  background: linear-gradient(180deg, rgba(255,255,255,0.2), transparent);
+  background: linear-gradient(180deg, rgba(255,255,255,0.2), transparent 656px);
   background-repeat: no-repeat;
   background-color: #849D8F;
 }
@@ -288,7 +287,6 @@ li.search::before {
   border: solid 1px #d3d3d2;
   background-color: #ffffff;
   padding-left: 15px;
-  color: #999999;
   font-size: 14px;
 }
 
@@ -336,7 +334,6 @@ li.enter-form::before {
   background-color: #ffffff;
   margin-bottom: 20px;
   padding-left: 15px;
-  color: #999999;
   font-size: 14px;
 }
 
@@ -348,7 +345,6 @@ li.enter-form::before {
   background-color: #ffffff;
   margin-bottom: 20px;
   padding-left: 15px;
-  color: #999999;
   font-size: 14px;
 }
 
@@ -358,6 +354,7 @@ li.enter-form::before {
 
 .red-button {
   font-size: 18px;
+  font-weight: bold;
   border: none;
   border-radius: 25px;
   box-shadow: 0px 1px 2px 0 #ac1000;
@@ -415,8 +412,8 @@ li.user-nav:focus  .entrance{
 }
 
 .entrance-links {
-  margin-top: -3px;
-  margin-left: 10px;
+  margin-top: 2px;
+  margin-left: 20px;
 }
 
 .basket {
@@ -475,6 +472,8 @@ li.basket-form::before {
 
 .shopping-cart-table {
   width: 100%;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #cacac7;
 }
 
 .cart-cell {
@@ -489,8 +488,9 @@ li.basket-form::before {
   line-height: 18px;
   text-align: right;
   color: #323232;
-
-  border-top: 1px solid #cacac7;
+  margin-left: 406px;
+  margin-top: 14px;
+  display: flex;
 }
 
 .cart-btn-del {
@@ -502,6 +502,7 @@ li.basket-form::before {
 
 .cart-delete {
   width: 26px;
+  padding-bottom: 10px;
 }
 
 .cart-img {
@@ -517,31 +518,38 @@ li.basket-form::before {
   width: 240px;
   padding-left: 4px;
   padding-right: 10px;
+  padding-top: 18px;
+  vertical-align: top;
 }
 
 .cart-weight{
   width: 43px;
   padding-left: 9px;
+  padding-bottom: 10px;
 }
 
 .cart-multiply {
   width: 9px;
+  padding-bottom: 10px;
 }
 
 .cart-price {
   padding-right: 5px;
   color: #999999;
   width: 73px;
+  padding-bottom: 10px;
 }
 
 .cell-total{
   padding-right: 5px;
+  padding-bottom: 10px;
 }
 
 .button-checkout {
-  display: block;
+  display: flex;
   padding: 13px 14px;
   margin-left: auto;
+  margin-top: 14px;
 
   font-weight: bold;
   line-height: 18px;
@@ -1036,6 +1044,7 @@ a.header-number {
   justify-content: space-between;
   margin-bottom: 40px;
   margin-top: -2px;
+  text-align: right;
 }
 
 .topping {
@@ -1073,7 +1082,8 @@ p.topping-proposal {
   opacity: 0.99;
   font-weight: bold;
   line-height: 24px;
-  display: flex;
+  display: inline-block;
+  vertical-align: baseline;
 }
 
 .button-topping-1 {
@@ -1081,12 +1091,10 @@ p.topping-proposal {
   padding-bottom: 10px;
   padding-left: 22px;
   padding-right: 23px;
-  margin-left: 355px;
   margin-top: 44px;
 }
 
 .button-topping-2 {
-  margin-left: 331px;
   margin-top: 44px;
   padding-top: 9px;
   padding-bottom: 11px;
@@ -1121,6 +1129,10 @@ p.topping-proposal {
 .catalog-link {
   color: #ffffff;
   position: relative;
+  display: block;
+}
+
+li.catalog-item:hover .catalog-link {
   z-index: 2;
 }
 
@@ -1195,6 +1207,8 @@ h3.catalog-item-title {
 .button-catalog {
   margin-top: 342px;
   padding: 12px 17px;
+  display: inline-block;
+  vertical-align: baseline;
 }
 
 .hit-item::before {
@@ -1497,6 +1511,7 @@ li.prev {
   height: 26px;
   text-align: center;
   padding-top: 2px;
+  vertical-align: baseline;
 }
 
 .pagination-item-active a {
@@ -1673,6 +1688,26 @@ a.about-us-bold {
   border-color: #e84d37;
 }
 
+.input-hover:hover {
+  border: solid 2px rgba(154, 154, 154, 0.5);
+}
+
+.input-hover:::-webkit-input-placeholder {
+  color: #999999;
+}
+
+.input-hover:-ms-input-placeholder {
+  color: #999999;
+}
+
+.input-hover::-ms-input-placeholder {
+  color: #999999;
+}
+
+.input-hover::placeholder {
+  color: #999999;
+}
+
 .modal {
   position: fixed;
 
@@ -1776,4 +1811,15 @@ a.about-us-bold {
   font-weight: bold;
   margin-left: 314px;
   padding: 12px 24px;
+}
+
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(157, 139, 132, 0.3);
+  z-index: 5;
 }
