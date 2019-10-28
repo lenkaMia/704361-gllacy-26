@@ -5,7 +5,7 @@ var overlay = document.querySelector(".overlay");
 var close = popup.querySelector(".modal-close");
 
 var form = popup.querySelector("form");
-var name = popup.querySelector("[name=write-name]");
+var login = popup.querySelector("[name=write-name]");
 var email = popup.querySelector("[name=write-email]");
 
 
@@ -23,7 +23,7 @@ close.addEventListener("click", function (evt) {
 });
 
 form.addEventListener("submit", function (evt) {
-  if (!name.value || !email.value) {
+  if (!login.value || !email.value) {
     evt.preventDefault();
     popup.classList.add("modal-error");
   }
