@@ -22,6 +22,7 @@ link.addEventListener("click", function (evt) {
 
   if (storage) {
     name.value = storage;
+    email.focus();
   } else {
     name.focus();
     }
