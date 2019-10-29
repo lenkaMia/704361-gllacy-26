@@ -79,15 +79,11 @@ a {
 
 .site-navigation li {
   position: relative;
-  display: inline-block;
-  vertical-align: baseline;
 }
 
 .user-navigation a {
   position: relative;
-  display: inline-block;
-  padding-top: 6px;
-  vertical-align: baseline;
+  padding-top: 12px;
 }
 
 li.catalog:hover .drop-down-catalog {
@@ -110,7 +106,7 @@ li.catalog::before {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 13px;
+  margin-top: 21px;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   max-width: 700px;
@@ -124,6 +120,7 @@ li.catalog::before {
   display: -ms-flexbox;
   display: flex;
   padding: 0;
+  margin-top: 20px;
   -webkit-box-align: start;
   -ms-flex-align: start;
   align-items: flex-start;
@@ -144,8 +141,6 @@ li.catalog::before {
 }
 
 a.nav-item {
-  display: inline-block;
-  vertical-align: baseline;
   padding-top: 8px;
   padding-bottom: 6px;
   padding-left: 14px;
@@ -199,7 +194,7 @@ li:focus .user-link {
   text-align: left;
   color: #323232;
   width: 143px;
-  height: 171px;
+  min-height: 171px;
   -webkit-box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.4);
   box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.4);
   border-radius: 5px;
@@ -207,7 +202,7 @@ li:focus .user-link {
   padding: 0;
   margin: 0;
   position: absolute;
-  top: 36px;
+  top: 28px;
   left: -7px;
   font-weight: 400;
   list-style: none;
@@ -280,7 +275,7 @@ a.catalog-new {
   background-color: #f8f7f4;
   display: none;
   position: absolute;
-  top: 36px;
+  top: 29px;
   right: 0;
   padding: 20px 15px;
 }
@@ -323,7 +318,7 @@ li.search::before {
   background-color: #f8f7f4;
   display: none;
   position: absolute;
-  top: 36px;
+  top: 29px;
   right: 0;
   z-index: 1;
 }
@@ -471,7 +466,7 @@ li.basket-form::before {
 
 .shopping-cart {
   position: absolute;
-  top: 36px;
+  top: 29px;
   right: 0;
   z-index: 10;
   font-size: 13px;
@@ -1187,8 +1182,6 @@ p.topping-proposal {
 
 .catalog-item {
   position: relative;
-  display: inline-block;
-  vertical-align: top;
   width: 267px;
   min-height: 267px;
   text-align: center;
@@ -1289,8 +1282,6 @@ h3.catalog-item-title {
 
 .button-catalog {
   padding: 12px 17px;
-  display: inline-block;
-  vertical-align: baseline;
 }
 
 .hit-item::before {
@@ -1535,7 +1526,11 @@ p.contacts-margin {
 
 .bold-contacts {
   font-size: 18px;
-  line-height: 20px;
+  line-height: 24px;
+}
+
+.contacts p:first-child {
+  padding-right: 100px;
 }
 
 a.map-number {
@@ -1546,8 +1541,7 @@ a.map-number {
   font-weight: bold;
   line-height: 24px;
   text-align: center;
-  display: inline-block;
-  vertical-align: sub;
+  display: flex;
   padding: 10px 27px;
   margin-top: 24px;
 }
@@ -1573,9 +1567,6 @@ a.map-number {
 }
 
 .pagination li {
-  position: relative;
-  display: inline-block;
-  vertical-align: baseline;
   margin: 0 1px;
 }
 
@@ -1594,12 +1585,11 @@ li.prev {
   font-size: 16px;
   font-weight: 500;
   color: #ffffff;
-  display: inline-block;
+  display: flex;
   width: 27px;
   height: 26px;
-  text-align: center;
   padding-top: 2px;
-  vertical-align: baseline;
+  padding-left: 9px;
 }
 
 .pagination-item-active a {
